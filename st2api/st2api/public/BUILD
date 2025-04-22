@@ -1,5 +1,0 @@
-files(
-    sources=[
-        "images/*.png",
-    ],
-)
