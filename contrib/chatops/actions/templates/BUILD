@@ -1,3 +1,0 @@
-resources(
-    sources=["*.j2"],
-)
