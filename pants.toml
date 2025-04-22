@@ -80,7 +80,7 @@ root_patterns = [
   # root conftest.py
   "/",
   # core libs
-  "/st2*",
+  "/st2common",
   # runners
   "/contrib/runners/*_runner",
   # packs (list /contrib/* packs individually; see note above)
