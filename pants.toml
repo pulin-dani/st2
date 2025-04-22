@@ -77,33 +77,7 @@ pants_ignore.add = [
 # Thus, we really do need to register each pack in contrib (but never under st2tests) separately.
 # We might also need to register packs in st2tests/testpacks.
 root_patterns = [
-  # root conftest.py
-  "/",
-  # core libs
-  "/st2common",
-  # runners
-  "/contrib/runners/*_runner",
-  # packs (list /contrib/* packs individually; see note above)
-  "/contrib/chatops",
-  "/contrib/core", # WARNING: also symlinked to st2tests/st2tests/fixtures/packs/core
-  "/contrib/default",
-  "/contrib/examples",
-  "/contrib/hello_st2",
-  "/contrib/linux",
-  "/contrib/packs",
-  "/st2tests/testpacks/checks",
-  "/st2tests/testpacks/errorcheck",
-  # other special-cased pack directories
-  "/contrib/examples/actions/ubuntu_pkg_info", # python script runs via shell expecting cwd in PYTHONPATH
-  # lint plugins
-  "/pylint_plugins",
-  # pants plugins
-  "/pants-plugins",
-  # misc
-  "/scripts",
-  "/tools",
-  # benchmarks
-  "/st2common/benchmarks/micro",
+  "/st2common"
 ]
 
 # DEFAULT has values that we can reuse/interpolate below
